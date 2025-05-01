@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>رؤية هندسية - Ro2ya Engineering</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Cairo', sans-serif; margin: 0; background-color: #f8f9fa; color: #222; transition: all 0.3s ease; }
+    nav { background: #003049; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 10; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 1rem; }
+    nav a:hover { text-decoration: underline; }
+    .lang-toggle { float: left; background: #669bbc; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer; }
+    header, section, footer { padding: 50px 20px; text-align: center; max-width: 1000px; margin: auto; }
+    .section { background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 30px; }
+    h1, h2 { color: #003049; }
+    .btn { background: #003049; color: white; padding: 10px 20px; border: none; border-radius: 8px; margin: 5px; cursor: pointer; text-decoration: none; display: inline-block; }
+    .btn.secondary { background: #669bbc; }
+    .icon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 20px; }
+    .icon-box { background: #e0ebf4; border-radius: 10px; padding: 20px; transition: 0.3s; }
+    .icon-box:hover { background: #dee7f0; transform: translateY(-5px); }
+    input, button { padding: 10px; margin: 5px; width: 250px; border-radius: 5px; border: 1px solid #ccc; }
+    footer { background: #003049; color: white; font-size: 0.9rem; border-radius: 0 0 12px 12px; }
+    .faq { text-align: right; padding: 10px; }
+    .faq h4 { color: #003049; margin: 10px 0 5px; }
+    .lang { display: none; }
+    .en { direction: ltr; text-align: left; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="lang-toggle" onclick="toggleLang()">EN / عربي</span>
+  <a href="#about">عن المنصة</a>
+  <a href="#departments">الأقسام</a>
+  <a href="#faq">الأسئلة الشائعة</a>
+  <a href="#login">تسجيل الدخول</a>
+  <a href="#contact">تواصل معنا</a>
+</nav>
+
+<header class="section">
+  <div class="lang ar">
+    <h1>🎓 رؤية هندسية</h1>
+    <p>منصة تعليمية تفاعلية لطلاب الهندسة بمختلف تخصصاتهم.</p>
+  </div>
+  <div class="lang en">
+    <h1>🎓 Ro2ya Engineering</h1>
+    <p>An interactive learning platform for engineering students of all disciplines.</p>
+  </div>
+</header>
+
+<section class="section" id="departments">
+  <div class="lang ar">
+    <h2>🔧 الأقسام الهندسية</h2>
+  </div>
+  <div class="lang en">
+    <h2>🔧 Engineering Departments</h2>
+  </div>
+  <div class="icon-grid">
+    <div class="icon-box">
+      <h3>الهندسة المدنية<br>Civil Engineering</h3>
+      <p>دورة SAP2000 - 8 أسابيع</p>
+      <a class="btn" href="#login">ابدأ التعلم</a>
+      <a class="btn secondary" href="#" onclick="alert('مدة الدورة: 8 أسابيع\nمصادر: PDF + فيديوهات')">شاهد الدورة</a>
+    </div>
+    <div class="icon-box">
+      <h3>الهندسة المعمارية<br>Architectural Engineering</h3>
+      <p>دورة AutoCAD - 7 أسابيع</p>
+      <a class="btn" href="#login">ابدأ التعلم</a>
+      <a class="btn secondary" href="#" onclick="alert('مدة الدورة: 7 أسابيع\nمصادر: CAD + فيديو')">شاهد الدورة</a>
+    </div>
+    <div class="icon-box">
+      <h3>الهندسة الكهربائية<br>Electrical Engineering</h3>
+      <p>تحليل الدوائر - 5 أسابيع</p>
+      <a class="btn" href="#login">ابدأ التعلم</a>
+      <a class="btn secondary" href="#" onclick="alert('مدة الدورة: 5 أسابيع\nمصادر: محاضرات + تمارين')">شاهد الدورة</a>
+    </div>
+    <div class="icon-box">
+      <h3>الهندسة الميكانيكية<br>Mechanical Engineering</h3>
+      <p>SolidWorks - 6 أسابيع</p>
+      <a class="btn" href="#login">ابدأ التعلم</a>
+      <a class="btn secondary" href="#" onclick="alert('مدة الدورة: 6 أسابيع\nمصادر: نماذج + فيديو')">شاهد الدورة</a>
+    </div>
+    <div class="icon-box">
+      <h3>هندسة البرمجيات<br>Software Engineering</h3>
+      <p>HTML / CSS / JS</p>
+      <a class="btn" href="#login">ابدأ التعلم</a>
+      <a class="btn secondary" href="#" onclick="alert('مدة الدورة: 6 أسابيع\nمصادر: مشاريع تطبيقية')">شاهد الدورة</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="lang ar">
+    <h2>❓ الأسئلة الشائعة</h2>
+    <div class="faq">
+      <h4>هل المنصة مجانية؟</h4>
+      <p>نعم، جميع الدورات التعليمية متاحة مجانًا.</p>
+      <h4>هل أحصل على شهادة؟</h4>
+      <p>نعم، بعد إتمام الدورة يتم إرسال شهادة إلكترونية عبر البريد.</p>
+    </div>
+  </div>
+  <div class="lang en">
+    <h2>❓ Frequently Asked Questions</h2>
+    <div class="faq">
+      <h4>Is the platform free?</h4>
+      <p>Yes, all courses are available for free.</p>
+      <h4>Do I get a certificate?</h4>
+      <p>Yes, after completing a course you'll receive an e-certificate.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="login">
+  <div class="lang ar">
+    <h2>🔐 تسجيل الدخول / إنشاء حساب</h2>
+    <form onsubmit="alert('تم تسجيل الدخول!'); return false;">
+      <input type="email" placeholder="البريد الإلكتروني" required><br>
+      <input type="password" placeholder="كلمة المرور" required><br>
+      <button class="btn" type="submit">تسجيل الدخول</button>
+      <button class="btn secondary" type="button" onclick="alert('تم إنشاء الحساب!')">إنشاء حساب</button>
+    </form>
+  </div>
+  <div class="lang en">
+    <h2>🔐 Login / Sign Up</h2>
+    <form onsubmit="alert('Logged in successfully!'); return false;">
+      <input type="email" placeholder="Email" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <button class="btn" type="submit">Login</button>
+      <button class="btn secondary" type="button" onclick="alert('Account created!')">Sign Up</button>
+    </form>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="lang ar">
+    <h2>📞 تواصل معنا</h2>
+    <p>رقم الهاتف: 01501096436</p>
+    <p>البريد الإلكتروني: <a href="mailto:eslamrashad164@icloud.com">eslamrashad164@icloud.com</a></p>
+    <p>بريد إضافي: <a href="mailto:Elgazzerahmed17@gmail.com">Elgazzerahmed17@gmail.com</a></p>
+  </div>
+  <div class="lang en">
+    <h2>📞 Contact Us</h2>
+    <p>Phone: 01501096436</p>
+    <p>Email: <a href="mailto:eslamrashad164@icloud.com">eslamrashad164@icloud.com</a></p>
+    <p>Extra Email: <a href="mailto:Elgazzerahmed17@gmail.com">Elgazzerahmed17@gmail.com</a></p>
+  </div>
+</section>
+
+<footer>
+  جميع الحقوق محفوظة © رؤية هندسية - المهندس إسلام رشاد وأحمد الجزار 2025
+</footer>
+
+<script>
+  let currentLang = 'ar';
+  function toggleLang() {
+    document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+    currentLang = currentLang === 'ar' ? 'en' : 'ar';
+    document.querySelectorAll('.' + currentLang).forEach(el => el.style.display = 'block');
+    document.body.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = currentLang;
+  }
+  toggleLang(); // initialize to Arabic
+</script>
+
+</body>
+</html>
